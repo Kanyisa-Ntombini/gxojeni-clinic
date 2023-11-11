@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gxojeni Clinic - Patient Information</title>
+  </head>
+  <body>
+    <header>
+      <h1>Gxojeni Clinic</h1>
+      <h2>Add New Patient</h2>
+    </header>
+    <main>
+      <form action="/new_patient" method="post">
+        <label for="firstNames">
+          Patient First Name/s
+          <input type="text" name="firstNames" id="firstNames" />
+        </label>
+        <label for="surnameNames">
+          Patient Surname
+          <input type="text" name="surnameNames" id="surnameNames" />
+        </label>
+        <label for="healthcareWorkerId">
+          Healthcare worker ID
+          <input
+            type="number"
+            name="healthcareWorkerId"
+            id="healthcareWorkerId"
+          />
+        </label>
+        <label for="patientNotes">
+          <textarea
+            name="patientNotes"
+            id="patientNotes"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </label>
+
+        <input type="submit" value="Submit" id="submitButton" />
+      </form>
+      <a href="index.html"><button>Back To Main Page</button></a>
+    </main>
+  </body>
+</html>

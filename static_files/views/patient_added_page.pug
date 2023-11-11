@@ -1,0 +1,17 @@
+doctype doctype html
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      style 
+         include ../css/common.css
+         include ../css/thank_you_page.css
+      title Thank you page
+   body
+      div
+         h1 Thanks for the info!
+         h2 The following was saved to the database:
+         ul
+            li 
+               span.label Visitor ID: 
+               span #{id}
